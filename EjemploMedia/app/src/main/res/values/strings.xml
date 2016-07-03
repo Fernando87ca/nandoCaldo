@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">EjemploMedia</string>
+    <string name="action_settings">Settings</string>
+    <string name="sIniciar">Iniciar Audio</string>
+    <string name="sPausar">Pausar</string>
+    <string name="SContinuar">Continuar</string>
+    <string name="sDeterner">Detener</string>
+    <string name="sCircular">No Reproducir de Forma Circular</string>
+</resources>

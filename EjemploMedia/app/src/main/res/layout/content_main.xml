@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.src.ejemplomedia.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:fillViewport="true">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sIniciar"
+                android:id="@+id/idIniciar"
+                android:layout_gravity="center_horizontal"
+                android:onClick="iniciarAudio"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sPausar"
+                android:id="@+id/idPausar"
+                android:layout_gravity="center_horizontal"
+                android:onClick="pausarAudio"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SContinuar"
+                android:id="@+id/idContinuar"
+                android:layout_gravity="center_horizontal"
+                android:onClick="continuarAudio"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sDeterner"
+                android:id="@+id/idDetener"
+                android:layout_gravity="center_horizontal"
+                android:onClick="detenerAudio"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sCircular"
+                android:id="@+id/idCircular"
+                android:layout_gravity="center_horizontal"
+                android:onClick="modoCiercular"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.src.ejemplointentcamara.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/idNombreFoto"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="@string/sIntroduceNombreFoto"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sTomarFoto"
+        android:id="@+id/idTomarFoto"
+        android:layout_below="@+id/idNombreFoto"
+        android:layout_toLeftOf="@+id/idRecuperarFoto"
+        android:layout_toStartOf="@+id/idRecuperarFoto"
+        android:onClick="tomarFoto"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sRecuperarFoto"
+        android:id="@+id/idRecuperarFoto"
+        android:layout_below="@+id/idNombreFoto"
+        android:layout_centerHorizontal="true"
+        android:onClick="recuperarFoto"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sVerFoto"
+        android:id="@+id/idVerFoto"
+        android:layout_below="@+id/idNombreFoto"
+        android:layout_toRightOf="@+id/idRecuperarFoto"
+        android:layout_toEndOf="@+id/idRecuperarFoto"
+        android:onClick="verFoto"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/idFoto"
+        android:layout_below="@+id/idRecuperarFoto"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@mipmap/ic_launcher" />
+
+</RelativeLayout>
