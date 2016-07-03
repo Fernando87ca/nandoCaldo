@@ -5,13 +5,13 @@
               android:layout_height="match_parent">
 
 
-    <fragment class="layout.FragmentoListiadoAnimales"
+    <fragment class="Fragmentos.FragmentoListiadoAnimales"
               android:id="@+id/idFragmentoListadoAnimales"
               android:layout_weight="30"
               android:layout_width="match_parent"
               android:layout_height="match_parent" />
 
-    <fragment class="layout.FragmentoDetalleAnimal"
+    <fragment class="Fragmentos.FragmentoDetalleAnimal"
               android:id="@+id/idFragmentoDetalleAnimal"
               android:layout_weight="70"
               android:layout_width="match_parent"

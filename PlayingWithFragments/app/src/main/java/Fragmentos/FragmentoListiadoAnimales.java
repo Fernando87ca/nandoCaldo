@@ -1,4 +1,4 @@
-package layout;
+package Fragmentos;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -56,8 +56,6 @@ public class FragmentoListiadoAnimales extends Fragment
     public void onActivityCreated(@Nullable Bundle savedInstanceState)
     {
         super.onActivityCreated(savedInstanceState);
-
-        View view = getView();
 
         listaVista = (ListView)getView().findViewById(R.id.idListadoXML);
         AdaptadorAnimales adaptadorAnimales = new AdaptadorAnimales(getView().getContext(),listaAnimales);

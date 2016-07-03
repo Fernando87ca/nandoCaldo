@@ -2,16 +2,21 @@ package com.src.playingwithfragments;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.NavigationView;
+import android.support.v4.app.Fragment;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import layout.FragmentoDetalleAnimal;
-import layout.FragmentoListiadoAnimales;
+import Fragmentos.FragmentoDetalleAnimal;
+import Fragmentos.FragmentoListiadoAnimales;
 
 public class Activity_Principal extends AppCompatActivity implements FragmentoListiadoAnimales.AnimalesLisener
 {
+    private DrawerLayout contenedorMenuIzquierdo;
+    private NavigationView menuIzquierdo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -20,6 +25,32 @@ public class Activity_Principal extends AppCompatActivity implements FragmentoLi
         setContentView(R.layout.layout_menu_desplegable);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        //crearemos la accion para el menu desplegable lateral izquierdo
+        contenedorMenuIzquierdo = (DrawerLayout)findViewById(R.id.menuIzquierdo);
+        menuIzquierdo = (NavigationView)findViewById(R.id.navview);
+        menuIzquierdo.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener()
+        {
+            @Override
+            public boolean onNavigationItemSelected(MenuItem item)
+            {
+                boolean fragmentTransaction = false;
+                Fragment fragment = null;
+
+                switch (item.getItemId())
+                {
+                    case R.id.menu_seccion_1:
+                        break;
+                    case R.id.menu_seccion_2:
+                        break;
+                    case R.id.menu_seccion_3:
+                        break;
+                }
+
+
+                return true;
+            }
+        });
 
         FragmentoListiadoAnimales fragmentoListaAnimales = (FragmentoListiadoAnimales) this.getSupportFragmentManager().findFragmentById(R.id.idFragmentoListadoAnimales);
         fragmentoListaAnimales.setListener((FragmentoListiadoAnimales.AnimalesLisener) this);

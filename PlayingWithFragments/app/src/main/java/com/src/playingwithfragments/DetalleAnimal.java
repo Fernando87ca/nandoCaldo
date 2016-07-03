@@ -3,7 +3,7 @@ package com.src.playingwithfragments;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import layout.FragmentoDetalleAnimal;
+import Fragmentos.FragmentoDetalleAnimal;
 
 public class DetalleAnimal extends AppCompatActivity
 {
