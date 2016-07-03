@@ -57,6 +57,8 @@ public class FragmentoListiadoAnimales extends Fragment
     {
         super.onActivityCreated(savedInstanceState);
 
+        View view = getView();
+
         listaVista = (ListView)getView().findViewById(R.id.idListadoXML);
         AdaptadorAnimales adaptadorAnimales = new AdaptadorAnimales(getView().getContext(),listaAnimales);
         listaVista.setAdapter(adaptadorAnimales);

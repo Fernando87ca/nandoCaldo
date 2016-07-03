@@ -12,7 +12,13 @@
     <string name="sLoro">Las Psitácidas (Psittacidae) son una familia de aves psitaciformes llamadas comúnmente loros o papagayos, e incluye a los guacamayos, las cotorras, los periquitos, los agapornis y formas afines.</string>
     <string name="sPavo">Pavo es un género de aves galliformes de la familia Phasianidae, que incluye dos especies, el pavo real común (Pavo cristatus) y el pavo real cuelliverde (Pavo muticus).</string>
     <string name="sPing">Los pingüinos (familia Spheniscidae, orden Sphenisciformes) son un grupo de aves marinas, no voladoras, que se distribuyen únicamente en el Hemisferio Sur, sobre todo en sus altas latitudes.</string>
-
+    
+    <!-- String para el menu desplegable izquierdo -->
     <string name="sUsuario">Fernando Cebollada</string>
-
+    <string name="seccion_1">Seccion 1</string>
+    <string name="seccion_2">Seccion 2</string>
+    <string name="seccion_3">Seccion 3</string>
+    <string name="otras_opciones">Otras Opciones</string>
+    <string name="opcion_1">Opcion 1</string>
+    <string name="opcion_2">Opcion 2</string>
 </resources>
