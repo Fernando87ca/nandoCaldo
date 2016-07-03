@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GrabadorDeSonidos</string>
+    <string name="action_settings">Settings</string>
+    <string name="sGrabar">Grabar Audio</string>
+    <string name="sReproducir">Reproducir Audio</string>
+    <string name="chooser_title">dalkfjdaslk</string>
+</resources>

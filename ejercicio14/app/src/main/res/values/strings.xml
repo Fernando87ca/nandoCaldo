@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ejercicio14</string>
+    <string name="action_settings">Settings</string>
+    <string name="Guardar">Guardar</string>
+    <string name="Nota">Nota:</string>
+    <string name="Recuperar">Recuperar</string>
+</resources>

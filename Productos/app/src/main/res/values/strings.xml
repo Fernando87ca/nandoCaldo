@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Productos</string>
+    <string name="action_settings">Settings</string>
+    <string name="sCodigo">Codigo del Artículo:</string>
+    <string name="sDescripcion">Descripción:</string>
+    <string name="sPrecio">Precio:</string>
+    <string name="sAlta">Alta</string>
+    <string name="sConsultaCodigo">Consultar por Codigo</string>
+    <string name="sConsultaDescripcion">Consultar por Descripción</string>
+    <string name="sBajaCodigo">Baja por Codigo</string>
+    <string name="sModificacion">Modificación</string>
+    <string name="title_activity_pantalla_resultados">PantallaResultados</string>
+    <string name="resultado">Resultados Obtenidos</string>
+</resources>

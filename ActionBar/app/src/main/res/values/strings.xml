@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Action Bar</string>
+    <string name="action_settings">Settings</string>
+    <string name="sHelloWorld">Hola Mundo</string>
+    <string name="opcion_menu1">Opcion 1</string>
+    <string name="opcion_menu2">Opcion 2</string>
+    <string name="opcion_menu3">Opcion 3</string>
+    <string name="telefono">Se selecciono el telefono</string>
+    <string name="camara">Se selecciono la camara</string>
+    <string name="mensaje_1">Se selecciono la primera opcion</string>
+    <string name="mensaje_2">Se selecciono la segunda opcion</string>
+    <string name="mensaje_3">Se selecciono la tercera opcion</string>
+    <string name="ocultar">Ocultar</string>
+    <string name="mostrar">Mostrar</string>
+</resources>

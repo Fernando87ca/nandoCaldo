@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">IntentTry</string>
+    <string name="action_settings">Settings</string>
+    <string name="sLanguage">Language</string>
+    <string name="sAlarm">Alarm Clock</string>
+    <string name="sCalendar">Calendar</string>
+    <string name="sCamera">Camera</string>
+    <string name="sContacts">Contacts</string>
+    <string name="sEmail">Mail</string>
+    <string name="sAccionesLocales">Local Actions</string>
+    <string name="sMaps">Map</string>
+    <string name="sMusicVideo">Music / Video</string>
+    <string name="sNote">New Note</string>
+    <string name="sPhone">Phone</string>
+    <string name="sSearch">Search</string>
+</resources>

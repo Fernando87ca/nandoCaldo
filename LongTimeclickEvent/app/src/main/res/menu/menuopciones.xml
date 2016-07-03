@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/telefono"
+        app:showAsAction="always"
+        android:icon="@mipmap/telefono"
+        android:title="telefono"/>
+    <item
+        android:id="@+id/camara"
+        app:showAsAction="always"
+        android:icon="@mipmap/camara"
+        android:title="camara"/>
+
+    <item
+        android:id="@+id/opcion1"
+        android:title="@string/opcion_menu1"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/opcion2"
+        android:title="@string/opcion_menu2"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/opcion3"
+        android:title="@string/opcion_menu3"
+        app:showAsAction="never"/>
+
+</menu>
+
