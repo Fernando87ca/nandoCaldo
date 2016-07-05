@@ -12,6 +12,9 @@ import android.view.MenuItem;
 
 import Fragmentos.FragmentoDetalleAnimal;
 import Fragmentos.FragmentoListiadoAnimales;
+import Fragmentos.fragmentos1;
+import Fragmentos.fragmentos2;
+import Fragmentos.fragmentos3;
 
 public class Activity_Principal extends AppCompatActivity implements FragmentoListiadoAnimales.AnimalesLisener
 {
@@ -40,14 +43,27 @@ public class Activity_Principal extends AppCompatActivity implements FragmentoLi
                 switch (item.getItemId())
                 {
                     case R.id.menu_seccion_1:
+                        fragment = new fragmentos1();
+                        fragmentTransaction = true;
                         break;
                     case R.id.menu_seccion_2:
+                        fragment = new fragmentos2();
+                        fragmentTransaction = true;
                         break;
                     case R.id.menu_seccion_3:
+                        fragment = new fragmentos3();
+                        fragmentTransaction = true;
                         break;
                 }
 
+                if(fragmentTransaction)
+                {
+                    getSupportFragmentManager().beginTransaction().replace(R.id.idListadoXML,fragment).commit();
+                    item.setChecked(true);
+                    getSupportActionBar().setTitle(item.getTitle());
+                }
 
+                contenedorMenuIzquierdo.closeDrawers();
                 return true;
             }
         });
