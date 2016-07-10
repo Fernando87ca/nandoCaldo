@@ -20,14 +20,17 @@ public class Activity_Principal extends AppCompatActivity implements FragmentoLi
 {
     private DrawerLayout contenedorMenuIzquierdo;
     private NavigationView menuIzquierdo;
+    boolean fragmentTransaction;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_menu_desplegable);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.appbar);
         setSupportActionBar(toolbar);
+
+        fragmentTransaction = false;
 
         //crearemos la accion para el menu desplegable lateral izquierdo
         contenedorMenuIzquierdo = (DrawerLayout)findViewById(R.id.menuIzquierdo);
@@ -37,7 +40,7 @@ public class Activity_Principal extends AppCompatActivity implements FragmentoLi
             @Override
             public boolean onNavigationItemSelected(MenuItem item)
             {
-                boolean fragmentTransaction = false;
+                fragmentTransaction = false;
                 Fragment fragment = null;
 
                 switch (item.getItemId())
@@ -58,7 +61,7 @@ public class Activity_Principal extends AppCompatActivity implements FragmentoLi
 
                 if(fragmentTransaction)
                 {
-                    getSupportFragmentManager().beginTransaction().replace(R.id.idListadoXML,fragment).commit();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.content_frame,fragment).commit();
                     item.setChecked(true);
                     getSupportActionBar().setTitle(item.getTitle());
                 }
@@ -68,8 +71,14 @@ public class Activity_Principal extends AppCompatActivity implements FragmentoLi
             }
         });
 
-        FragmentoListiadoAnimales fragmentoListaAnimales = (FragmentoListiadoAnimales) this.getSupportFragmentManager().findFragmentById(R.id.idFragmentoListadoAnimales);
-        fragmentoListaAnimales.setListener((FragmentoListiadoAnimales.AnimalesLisener) this);
+        if(!fragmentTransaction)
+        {
+            FragmentoListiadoAnimales fragment = new FragmentoListiadoAnimales();
+            fragment.setListener((FragmentoListiadoAnimales.AnimalesLisener) this);
+
+            getSupportFragmentManager().beginTransaction().replace(R.id.content_frame,fragment).commit();
+        }
+
     }
 
     @Override
@@ -84,7 +93,6 @@ public class Activity_Principal extends AppCompatActivity implements FragmentoLi
     {
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings)
         {
             return true;
